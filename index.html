@@ -5,11 +5,24 @@
     <title>Olá Mundo!</title>
 
     <link rel="stylesheet" href="./photon/dist/css/photon.min.css">
+
+    <script>window.$ = window.jQuery = require('jquery')</script>
+    <script src="./controller.js"></script>
   </head>
   <body>
     <div class="window">
           <header class="toolbar toolbar-header">
-            <h1 class="title">Photon</h1>
+
+            <div class="toolbar-actions">
+              <div class="btn-group pull-left">
+
+                <button id="btnCancel" class="icon icon-record" style="color:#fc605b; border:none;"></button>
+                <button id="btnMinus" class="icon icon-record" style="color:#fdbc40; border:none;"></button>
+                <button id="btnPlus" class="icon icon-record" style="color:#34c84a; border:none;"></button>
+              </div>
+              <h1 class="title" style="display: inline; text-align: left; margin-left:40%">Photon</h1>
+            </div>
+
 
             <div class="toolbar-actions">
 
