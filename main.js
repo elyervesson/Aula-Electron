@@ -13,8 +13,11 @@ let mainWindow
 
 function createWindow () {
   // Create the browser window.
-  // O terceiro parametro indica que não deve ser exibido o frame default do windows
-  mainWindow = new BrowserWindow({width: 1440, height: 900, frame: false})
+  // O terceiro parametro indica que não deve ser exibido o frame default do windows.
+  // A variavel __dirname é uma variavel global que se refere ao diretorio em que o script esta sendo executado.
+
+  console.log(__dirname + "/icon.png");
+  mainWindow = new BrowserWindow({width: 1440, height: 900, frame: false, icon: __dirname + '/icon.png'});
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
